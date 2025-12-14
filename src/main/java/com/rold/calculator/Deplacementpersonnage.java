@@ -6,5 +6,11 @@ public class Deplacementpersonnage {
       {
             return "NORD";
       }
+      public String tourner (int fois)
+      {
+          orientation=1;
+
+          return "EST";
+      }
 
 }

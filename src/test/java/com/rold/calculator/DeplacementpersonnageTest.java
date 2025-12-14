@@ -4,9 +4,15 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class DeplacementpersonnageTest {
+
+    Deplacementpersonnage p = new Deplacementpersonnage();
     @Test
     void orientation_initial_au_nord() {
-        Deplacementpersonnage p = new Deplacementpersonnage();
         assertThat(p.getorientation()).isEqualTo("NORD");
+    }
+    @Test
+    void tourner_une_fois_vers_EST()
+    {
+       assertThat(p.tourner(1)).isEqualTo("EST");
     }
 }
