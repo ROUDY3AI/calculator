@@ -8,9 +8,16 @@ public class Deplacementpersonnage {
       }
       public String tourner (int fois)
       {
-          orientation=1;
+          orientation=(orientation + fois)%4;
+          switch(orientation)
+          {
+              case 0:return "NORD";
+              case 1:return "EST";
+              case 2:return  "SUD";
+              case 3:return  "OUEST";
+              default:return "NORD";
+          }
 
-          return "EST";
       }
 
 }

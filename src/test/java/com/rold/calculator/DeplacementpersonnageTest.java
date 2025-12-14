@@ -15,4 +15,9 @@ class DeplacementpersonnageTest {
     {
        assertThat(p.tourner(1)).isEqualTo("EST");
     }
+    @Test
+    void tourner_4_fois_tourner_revener_nord()
+    {
+        assertThat(p.tourner(4)).isEqualTo("NORD");
+    }
 }
